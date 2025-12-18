@@ -943,8 +943,11 @@ color: var(--color-label);
   color: var( );
 }
 
-.checkbox:checked + .modal-form-box > .custom-checkbox {
+.checkbox:checked + .modal-form-box .custom-checkbox {
   background-color: var(--bg-color);
   border: none;
+}
+
+.checkbox:checked + .modal-form-box .custom-checkbox-icon {
   fill: var(--span-color);
 }
