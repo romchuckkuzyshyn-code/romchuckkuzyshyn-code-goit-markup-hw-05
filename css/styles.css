@@ -512,7 +512,7 @@ ul {
     color: #F4F4FD;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    width: 274px;
+    width: 264px;
     font-weight: 500;
     color: var(--white-color);
 }
@@ -622,7 +622,7 @@ ul {
 }
 
 .footer-social {
-    margin-right: 80px
+    margin-right: 80px;
 }
 
 .footer-logo {
