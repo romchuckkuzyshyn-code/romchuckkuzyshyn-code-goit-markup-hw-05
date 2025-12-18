@@ -640,6 +640,7 @@ ul {
     padding-top: 8px;
     padding-bottom: 8px;
     padding-left: 16px;
+
 }
 
 .footer-email {
@@ -678,7 +679,7 @@ ul {
 }
 
 .button-x {
-    border: 1px solid #E7E9FC;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     background-color: #E7E9FC;
     display: flex;
@@ -690,7 +691,9 @@ ul {
     top: 24px;
     right: 24px;
     cursor: pointer;
-
+    padding: 0px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .inner-wrapper {
@@ -718,6 +721,9 @@ ul {
     height: 40px;
     width: 100%;
     outline: none;
+    background-color: transparent;
+    outline: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-input:focus {
@@ -750,15 +756,15 @@ ul {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(50%, 50%);
+    transform: translate(-50%,-50%);
     background-color: #FCFCFC;
     width: 408px;
     min-height: 584px;
     padding: 72px 24px 24px 24px;
     border-radius: 4px;
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 
-    0 1px 3px 0, rgba(0, 0, 0, 0.12), 
-    0 2px 1px 0, rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 1px, rgba(0, 0, 0, 0.14), 
+    0 1px 3px, rgba(0, 0, 0, 0.12), 
+    0 2px 1px, rgba(0, 0, 0, 0.2);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -783,7 +789,7 @@ ul {
 }
 
 .wrapper {
-    margin-bottom: 16px;
+    margin-bottom: 8px;
 }
 
 .backdrop {
@@ -866,6 +872,11 @@ color: #4D5AE5;
 .button-x:focus {
     background-color: #404BBF;
     fill: #FFFFFF;
+    border: none;
+}
+
+.button-close-x {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .custom-checkbox-icon {
