@@ -372,7 +372,6 @@
             <div class="footer-subscribe">
                 <p class="social-foot-text">Subscribe</p>
                 <form action="footer" class="footer-form">
-                     <div class="footer-form">
                         <label class="footer-lable" for="footer-email"></label>
                         <div class="footer-email">
                             <input type="email" class="footer-form-input" id="footer-email" placeholder="E-mail">
@@ -382,7 +381,6 @@
                               <use href="./images/icons.svg#icon-Plane"></use>
                             </svg>
                         </button>
-                    </div>
                 </form>
             </div>
         </div>
@@ -407,9 +405,9 @@
                         </div>
                             
                             <div class="wrapper">
-                                <label class="label-text" for="phone">Phone</label>
+                                <label class="label-text" for="user-name">Phone</label>
                                 <div class="inner-wrapper">
-                                    <input type="tel" class="form-input" id="phone">
+                                    <input type="tel" class="form-input" id="user-name" name="user-name">
                                     <svg class="form-icon" width="18" height="24">
                                         <use href="./images/icons.svg#icon-phone"></use>
                                     </svg>
@@ -417,9 +415,9 @@
                             </div>
                             
                             <div class="wrapper">
-                                <label class="label-text" for="useremail">Email</label>
+                                <label class="label-text" for="user-name">Email</label>
                                 <div class="inner-wrapper">
-                                        <input type="email" class="form-input" id="useremail">
+                                        <input type="email" class="form-input" id="user-name" name="user-name">
                                         <svg class="form-icon" width="18" height="24">
                                             <use href="./images/icons.svg#icon-email"></use>
                                         </svg>
@@ -427,14 +425,12 @@
                             </div>
                                 
                             <div class="wrapper">
-                                <label class="label-text" for="comment">Comment</label>
-                                    <div class="inner-wrapper">
-                                        <textarea class="textarea-comment" name="comment" id="comment" placeholder="Text input"></textarea>
-                                    </div>
+                                <label class="label-text" for="user-comment">Comment</label>
+                                        <textarea class="textarea-comment" name="user-comment" id="user-comment" placeholder="Text input"></textarea>
                             </div>
+
                         <div class="privacy">
                             <input type="checkbox" class="checkbox visually-hidden" id="user-privacy" name="user-privacy" checked value="true">
-                            <div class="label-checkbox">
                                 <label class="modal-privacy" for="user-privacy">
                                 <span class="custom-checkbox">
                                     <svg class="custom-checkbox-icon" width="10" height="8">
@@ -446,7 +442,6 @@
                                 Privacy Policy
                                 </a>
                                 </label>
-                            </div>
                         </div>
                         <button type="button" class="send-button">Send</button>
                     </form>

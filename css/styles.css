@@ -25,6 +25,7 @@ img {
 
 :root {
     --white-color: #FFFFFF;
+    --color-label: #8e8f99;
 }
 
 .container {
@@ -829,7 +830,7 @@ ul {
     line-height: 117%;
     letter-spacing: 0.04em;
     display: block;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
 }
 
 .privacy-link {
@@ -901,21 +902,22 @@ input [type="checkbox"] {
     height: 16px;
 }
 
-.checkbox:checked +.label-checkbox> .modal-privacy > .custom-checkbox {
+.checkbox:checked + .modal-privacy > .custom-checkbox {
     background-color: #404BBF;
     border-color: none;
 }
 
-.checkbox:checked+.label-checkbox>.modal-privacy>.custom-checkbox .custom-checkbox-icon {
+.checkbox:checked + .modal-privacy>.custom-checkbox .custom-checkbox-icon {
     fill: #F4F4FD;
 }
 
 .privacy {
-    margin-bottom: 40px;
+    margin-bottom: 24px;
 }
 
 .modal-privacy {
 font-size: 12px;
 line-height: 117%;
 letter-spacing: 0.04em;
+color: var(--color-label);
 }
