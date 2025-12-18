@@ -947,9 +947,9 @@ color: var(--color-label);
 .checkbox:checked + .modal-form-box > .custom-checkbox {
   background-color: var(--bg-color);
   border: none;
-  fill: currentColor;
+  fill: var(--span-color);
 }
 
-.checkbox:checked + .modal-form-box > .custom-checkbox-icon {
-    fill: currentColor;
+body:has(.backdrop.is-open) {
+  overflow-y: hidden;
 }
