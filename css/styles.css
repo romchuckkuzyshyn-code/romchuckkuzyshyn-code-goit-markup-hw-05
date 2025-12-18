@@ -803,6 +803,10 @@ padding: 8px 16px;
     margin-bottom: 8px;
 }
 
+.comment-text {
+    margin-bottom: 16px;
+}
+
 .backdrop {
     position: fixed;
     top: 0;
