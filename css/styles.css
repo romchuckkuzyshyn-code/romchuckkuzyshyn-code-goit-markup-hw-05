@@ -950,6 +950,6 @@ color: var(--color-label);
   fill: currentColor;
 }
 
-/* .checkbox:checked + .modal-form-box > .custom-checkbox-icon {
-  
-} */
+.checkbox:checked + .modal-form-box > .custom-checkbox-icon {
+    fill: currentColor;
+}
