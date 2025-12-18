@@ -759,6 +759,7 @@ ul {
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 
     0 1px 3px 0, rgba(0, 0, 0, 0.12), 
     0 2px 1px 0, rgba(0, 0, 0, 0.2);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .textarea-comment {
@@ -787,15 +788,29 @@ ul {
 
 .backdrop {
     position: fixed;
-    top: -50%;
-    left: -50%;
+    top: 0;
+    left: 0;
     z-index: 1;
 
     width: 100%;
     height: 100%;
+    background-color: rgba(46, 47, 66, 0.4);
 
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
+
+.backdrop.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: initial;
+    transition-delay: 0ms;
+}
+
 .textarea-comment::placeholder {
     color: #8E8F99;
     font-weight: 400;
@@ -812,7 +827,7 @@ ul {
     margin-bottom: 24px;
 }
 
-.privacy-span {
+.privacy-link {
     line-height: 133%;
 text-decoration: underline;
 text-decoration-skip-ink: none;
@@ -853,3 +868,44 @@ color: #4D5AE5;
     fill: #FFFFFF;
 }
 
+.custom-checkbox-icon {
+    fill: transparent;
+    
+}
+
+.custom-checkbox {
+    border-radius: 2px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    width: 16px;
+    height: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 300ms ease,
+    border-color 300ms ease;
+}
+
+input [type="checkbox"] {
+    width: 16px;
+    height: 16px;
+}
+
+.checkbox:checked + .modal-privacy > .custom-checkbox {
+    background-color: #404BBF;
+    border-color: none;
+}
+
+.checkbox:checked+.modal-privacy>.custom-checkbox .custom-checkbox-icon {
+    fill: #F4F4FD;
+}
+
+.privacy {
+    margin-bottom: 40px;
+}
+
+.modal-privacy {
+font-size: 12px;
+line-height: 117%;
+letter-spacing: 0.04em;
+}
