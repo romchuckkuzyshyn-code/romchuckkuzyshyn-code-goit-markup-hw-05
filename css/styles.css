@@ -909,11 +909,11 @@ color: #4D5AE5;
   height: 16px;
   margin-right: 8px;
   border-radius: 2px;
-  border: 1px solid var(--navy-blue-modal);
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(46, 47, 66, 0.4);
   fill: transparent;
 }
 
@@ -940,11 +940,11 @@ color: var(--color-label);
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: var(--light-slate);
+  color: var( );
 }
 
 .checkbox:checked + .modal-form-box > .custom-checkbox {
   background-color: var(--bg-color);
   border: none;
-  fill: var(--color-label);
+  fill: var(--span-color);
 }
