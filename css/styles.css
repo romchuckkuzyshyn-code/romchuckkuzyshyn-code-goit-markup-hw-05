@@ -949,7 +949,7 @@ color: var(--color-label);
 .checkbox:checked + .modal-form-box > .custom-checkbox {
   background-color: var(--bg-color);
   border: none;
-  /* fill: var(--span-color); */
+   fill: var(--span-color); 
 }
 
 body:has(.backdrop.is-open) {
@@ -958,4 +958,4 @@ body:has(.backdrop.is-open) {
 
 .custom-checkbox-icon {
     fill: #FFFFFF;
-}
+} 
